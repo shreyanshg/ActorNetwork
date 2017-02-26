@@ -1,0 +1,13 @@
+<div align="center" style="font-family: 'Montserrat', sans-serif;">
+  <div class="row" style="margin-top: 150px;">
+    <h1><b>IMDB Search</b></h1>
+    <form>
+      <input style="min-width: 584px; top: 43px; left: 0px;" type="text" ng-model="search_text" placeholder="Search Actors or Movies" required>
+      <button ng-click="search(search_text)">Search</button>
+      <br/>
+      <input type="radio" ng-model="query_type" value="actors">Actors
+      &emsp;
+      <input type="radio" ng-model="query_type" value="movies">Movies
+    </form>
+  </div>
+</div>

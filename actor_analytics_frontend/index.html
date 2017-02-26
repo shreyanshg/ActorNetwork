@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="ActorNetwork">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>IMDB Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.3/nv.d3.min.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="container">
+    <!-- <h1>HEllo</h1>
+    <ul>
+      <li>to remove
+        <a ui-sref="actors({search : actorCtrl.actors_details.actor_name})">{{actorCtrl.actors_details.actor_name}}</a>
+        </li>
+      </ul> -->
+
+    <ui-view> </ui-view>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.3/nv.d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.7/angular-nvd3.min.js"></script>
+    <script src="assets/js/app.js" charset="utf-8"></script>
+    <script src="assets/js/config.js" charset="utf-8"></script>
+    <script src="assets/js/services/networkService.js" charset="utf-8"></script>
+    <script src="assets/js/controllers/actorNetworkCntrl.js" charset="utf-8"></script>
+    <script src="assets/js/controllers/movieController.js" charset="utf-8"></script>
+    <script src="assets/js/controllers/aboutCntrl.js" charset="utf-8"></script>
+    <script src="assets/js/controllers/searchController.js" charset="utf-8"></script>
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+<div>
+  <p align="center" ng-if="isLoading">Loading...</p>
+  <div>
+    <h2>{{movie_details.title}}</h2>
+    <div ng-if="!isLoading">
+      <img ng-src="{{movie_details.cover_url}}" ng-style="{width: '400px', height: '500px'}">
+      <div style="align:right">
+        <h4>Plot: </h4>
+        <p>{{movie_details.plot}}</p>
+        <h4>Runtime: </h4>
+        <p>{{movie_details.runtime}} minutes</p>
+        <h4>Rating: </h4>
+        <p>{{movie_details.rating}}/ 10</p>
+        <h4>Genres: </h4>
+        <p>{{movie_details.genres}}</p>
+        <h4>Cast: </h4>
+        <ul>
+          <li ng-repeat="actor in movie_details.cast"><a ui-sref="actors({search: actor.name})">{{actor.name}}</a></li>
+        </ul>
+    </div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <p align="center" ng-if="isLoading">Loading...</p>
+  <div ng-if="!isLoading">
+
+    <div class="row">
+      <h2>{{actor_details.name}}</h2>
+      <div class="col-lg-4">
+
+        <img ng-src="{{actor_details.headshot}}" ng-style="{width: '200px', height: '300px'}">
+      </div>
+      <div class="col-lg-8">
+        <nvd3 ng-if="actor_details.work_count != 0" options="options" data="actor_details.relations" class="with-3d-shadow with-transitions"></nvd3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h4><b>Biography: </b></h4>
+        <p>{{actor_details.biography}}</p>
+        <p>Has appeared in <b>{{actor_details.work_count}}</b> movies/ TV series</p>
+        <h4 ng-if="actor_details.work_count != 0"><b>Latest Works: </b></h4>
+        <ul>
+          <li ng-repeat="movie in actor_details.recent_movies"><a ui-sref="movies({search: movie.title})">{{movie.title}} ({{movie.year}})</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
